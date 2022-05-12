@@ -25,9 +25,7 @@ app.get("/tests", (req, res) => {
 app.post("/tests", (req, res) => {
   // need to grab the data from the request body
   // need to push the data as an object into data array
-  // redirect response
-  // for now send updated array
-
+  //send updated array
   let return_string = req.body.string_to_cut
     .split("")
     .filter((letter, index) => (index + 1) % 3 === 0);
